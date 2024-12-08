@@ -1,0 +1,42 @@
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-btn">&times;</span>
+        <div>
+            <img src="Imagenes/3.png" alt="Icono" class="icon">
+        </div>
+        <form id="registration-form" action="RegistroUser.php" method="post">
+
+            <input id="email" type="email" name="correo" class="input-field" placeholder="Correo Electrónico" required />
+
+            <input id="idusuario" type="text" name="id" class="input-field" placeholder="ID Usuario o núm. De control" required pattern="[0-9]{8}" title="El id tiene que tener 8 numero exactamente" />
+
+            <div class="two-columns">
+                <input id="first-name" type="text" name="nombre" class="input-field" placeholder="Nombre(s)" required />
+                <input id="last-name" type="text" name="apellido" class="input-field" placeholder="Apellido(s)" required />
+            </div>
+
+            <input id="curp" type="text" name="curp" class="input-field" placeholder="CURP" required pattern="[A-Z0-9]{18}" title="El CURP debe tener 18 caracteres en mayúsculas" />
+
+            <input id="control-number" type="text" name="num_control" class="input-field" placeholder="Núm. de control" style="display: none;" />
+
+            <input id="phone" type="text" name="telefono" class="input-field" placeholder="Teléfono" required pattern="\d{10}" title="El número de teléfono debe tener 10 dígitos" />
+
+            <!-- Eliminamos el pattern de aquí -->
+            <input id="password" type="password" name="password" class="input-field" placeholder="Contraseña (8 caracteres, una mayúscula, minúscula, un número y un -*?!@#$.)" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[-*?!@#$.])[a-zA-Z0-9\-*?!@#$.]{8}$" title="La contraseña debe tener exactamente 8 caracteres, incluyendo una mayúscula, una minúscula, un dígito y un carácter especial (-*?!@#$.)" />
+
+
+            <!-- Mensaje de error para la contraseña -->
+            <span id="password-error" class="error-message"></span>
+
+            <button type="submit" class="btn">Registrarse</button>
+        </form>
+        <div id="success-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-success-btn">&times;</span>
+        <p>¡Registro exitoso!</p>
+    </div>
+</div>
+
+    </div>
+    <script src="RegistroUser.js" defer></script>
+</div>

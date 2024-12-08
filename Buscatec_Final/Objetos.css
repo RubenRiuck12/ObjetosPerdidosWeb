@@ -1,0 +1,159 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    background-color: #374151;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 140px;
+    height: auto; 
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+
+.volver-btn {
+    margin-top: 120px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volver-btn:hover {
+    background-color: #218838;
+}
+
+/* Table and Filters */
+h2 {
+
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filters {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filters label {
+    margin-right: 10px;
+}
+
+/* Table */
+.table-container {
+    margin-top: 20px;
+    max-width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;  /* Centra la tabla horizontalmente */
+    align-items: center;  
+    position: relative;
+}
+
+
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-size: 12px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #898AA6;
+    color: white;
+    position: sticky;
+    top: 0;  /* Esto hace que el encabezado se quede fijo en la parte superior */
+
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table td:nth-child(4) {
+    word-wrap: break-word;
+}
+
+/* Adjust specific column widths */
+table th:nth-child(4), table td:nth-child(4) {
+    width: 30%; /* Adjust this value as needed */
+}
+
+
+
+/* Estilo para el contador de objetos */
+#contador-objetos {
+    text-align: center;       /* Centrar el texto */
+    font-size: 1.2em;         /* Tamaño de fuente */
+    font-weight: bold;        /* Texto en negrita */
+    background-color: #01D6D7;          /* Color azul */
+    margin: 15px 0;           /* Espaciado superior e inferior */
+}
+

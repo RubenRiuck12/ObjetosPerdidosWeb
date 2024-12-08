@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    width: 100vw;
+}
+
+.logo img {
+    width: 140px;
+    height: auto; 
+}
+
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+
+.header {
+    background-color: #374151;
+    width: 100vw;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 68px auto 0; /* Centrado horizontal y separación con el header */
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+}
+
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.upload-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.right-section {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.profile-form .form-group {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+}
+
+.objects-section {
+    width: 30%;
+}
+
+.objects-section h2 {
+    background-color: #374151;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.objects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objects img {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* Botón de eliminar */
+.btn-delete {
+    background-color: #e11d48; /* Rojo */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #b91c1c; /* Rojo oscuro al pasar el mouse */
+}
+
+/* Botón de archivar */
+.btn-archive {
+    background-color: #2563eb; /* Azul */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-archive:hover {
+    background-color: #1d4ed8; /* Azul oscuro al pasar el mouse */
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+

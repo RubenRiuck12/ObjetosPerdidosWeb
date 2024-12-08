@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    width: 100vw;
+}
+
+.header {
+    background-color: #374151;
+    width: 100vw;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Asegura que todo el contenido se alinee a la derecha */
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Para que se vea que es interactivo */
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile button {
+    margin-left: 10px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 20px auto; /* Centrar horizontalmente */
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.registro-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.image-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-upload img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+    width: 100%;
+}
+
+.descripcion {
+    height: 100px;
+    resize: none;
+}
+
+.upload-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.save-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    align-self: flex-start;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .registro-form {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+.search-btn {
+    background-color: #4f46e5; /* Color principal */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    margin: 0 20px; /* Espaciado para evitar que toque otros elementos */
+}
+
+.search-btn:hover {
+    background-color: #4338ca; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+.search-btn:active {
+    background-color: #3730a3; /* Color al hacer clic */
+    transform: translateY(0); /* Sin elevación */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Sombra reducida */
+}
+

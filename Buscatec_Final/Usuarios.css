@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #374151;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 140px;
+    height: auto; 
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Para que se vea que es interactivo */
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+/*estilos para la tabla de usuarios*/
+
+
+.content-container {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px; /* Aumenta el margen superior para separar el main del header */
+}
+
+
+h2 {
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    font-size: 12px; /* Tamaño de la fuente reducido para toda la tabla */
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #898AA6;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+
+.volver-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volver-btn:hover {
+    background-color: #218838;
+}

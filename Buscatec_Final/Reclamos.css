@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 50px; /* Ajusta según la altura del header */
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background-color: #374151;
+    width: 100vw;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000; /* Asegura que el header quede encima del resto del contenido */
+}
+
+.search-bar {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Asegura que todo el contenido se alinee a la derecha */
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Para que se vea que es interactivo */
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile button {
+    margin-left: 10px;
+}
+
+
+.logo img {
+    width: 140px; /* Ajusta el tamaño que desees */
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.registro-reclamo {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.registro-reclamo h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#form-reclamo label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+#form-reclamo input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#form-reclamo button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#form-reclamo button:hover {
+    background-color: #45a049;
+}
+
+/* Caja de tabla de reclamos */
+.tabla {
+    background-color: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    padding: 12px; /* Aumenta el padding horizontal para más espacio */
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #fff;
+}
+
+.accept-btn,
+.reject-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+}
+
+.accept-btn:hover {
+    background-color: #45a049;
+}
+
+.reject-btn {
+    background-color: #f44336;
+}
+
+.reject-btn:hover {
+    background-color: #d32f2f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para la tabla de verificaciones de reclamos */
+.verificaciones {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.verificaciones h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.verificaciones table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.verificaciones th,
+.verificaciones td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.verificaciones th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.verificaciones td {
+    background-color: white;
+}
+
+.verificaciones tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Botones dentro de la tabla de "Verificaciones de Reclamos" */
+.verificaciones button {
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.verificaciones button:nth-child(1) {
+    background-color: #4CAF50;
+}
+
+.verificaciones button:nth-child(1):hover {
+    background-color: #45a049;
+}
+
+.verificaciones button:nth-child(2) {
+    background-color: #ff4c4c;
+}
+
+.verificaciones button:nth-child(2):hover {
+    background-color: #e60000;
+}
+
+.search-btn {
+    background-color: #4f46e5; /* Color principal */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    margin: 10px; /* Separación entre elementos cercanos */
+}
+
+.search-btn:hover {
+    background-color: #4338ca; /* Color al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+.search-btn:active {
+    background-color: #3730a3; /* Color al hacer clic */
+    transform: translateY(0); /* Vuelve a su lugar */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15); /* Sombra reducida */
+}

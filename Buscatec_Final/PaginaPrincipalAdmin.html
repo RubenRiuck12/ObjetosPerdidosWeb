@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="PaginaPrincipalAdmin.css">
+</head>
+<body>
+    <div class="inicio">
+            <header class="header">
+                <div class="logo">
+                    <a href="PaginaPrincipalAdmin.html">
+                        <img src="Imagenes/logobuscatec-modified.png" alt="Logo">
+                    </a>
+                </div>
+                <input type="text" class="search-bar" placeholder="¿Haz perdido algo? Encuéntralo aquí">
+                <div class="profile">
+                    <a href="PerfilUser.html" id="nombre-usuario">Administrador</a>
+                    <img src="Imagenes/IconoUsuario.png" alt="Usuario">
+                    <button class="logout-btn" onclick="location.href='InicioLog.html'">Cerrar sesión</button>
+                </div>
+            </header>
+
+            <div class="container">
+                <section class="novedades">
+                    <div class="search-section">
+                        <span>Filtrar por:</span>
+                        <input type="date" class="input-field"></div>
+                    <h2>Revisiones</h2>
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="Imagenes/IconoFoto.png" alt="Imagen del objeto">
+                            <button class="accept-btn">Aceptar</button>
+                            <button class="reject-btn">Rechazar</button>
+                        </div>
+                        <div class="item-info">
+                            <p>ID:</p>
+                            <p>Clasificación:</p>
+                            <p>Fecha:</p>
+                            <p>Descripción:</p>
+                            <p>Encontrado por:</p>
+                            <p>Contacto:</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-image">
+                            <img src="Imagenes/IconoFoto.png" alt="Imagen del objeto">
+                            <button class="accept-btn">Aceptar</button>
+                            <button class="reject-btn">Rechazar</button>
+                        </div>
+                        <div class="item-info">
+                            <p>ID:</p>
+                            <p>Clasificación:</p>
+                            <p>Fecha:</p>
+                            <p>Descripción:</p>
+                            <p>Encontrado por:</p>
+                            <p>Contacto:</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="PaginaPrincipalAdmin.js"></script>
+</body>
+</html>

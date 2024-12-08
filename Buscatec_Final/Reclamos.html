@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda</title>
+    <link rel="stylesheet" href="Reclamos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="PaginaPrincipalUser.html">
+                <img src="Imagenes/logobuscatec-modified.png" alt="Logo">
+            </a>
+        </div>
+        <input type="text" class="search-bar" id="search-bar" placeholder="¿Haz perdido algo? Encuéntralo aquí">
+        <div class="profile">
+            <a href="PerfilUser.html" id="nombre-usuario">Nombre usuario</a>
+            <img src="Imagenes/IconoUsuario.png" alt="Usuario">
+            <button class="logout-btn" onclick="location.href='InicioLog.html'">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <div class="registro-reclamo">
+        <h2>Registrar Reclamo</h2>
+        <form id="form-reclamo">
+            <label for="id-objeto">ID de Objeto:</label>
+            <input type="text" id="id-objeto" name="id-objeto" required placeholder="Ingresa el ID del objeto a reclamar">
+    
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required placeholder="Ingresa tu usuario">
+    
+            <button type="submit">Registrar</button>
+        </form>
+        <p id="mensaje-exito" style="display: none; color: green; margin-top: 10px;">Reclamo realizado con éxito</p>
+
+    </div>
+
+    <div class="tabla">
+        <h2>Lista de Reclamos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Objeto</th>
+                    <th>Número de Contacto</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12345</td>
+                    <td>555-1234</td>
+                    <td>2024-11-10</td>
+                    <td>
+                        <button class="accept-btn">Aceptar</button>
+                        <button class="reject-btn">Rechazar</button>
+                    </td>
+                </tr>
+                <!-- Agrega más filas aquí según sea necesario -->
+            </tbody>
+        </table>
+    </div>
+    <script src="Reclamos.js"></script>
+</body>
+</html>

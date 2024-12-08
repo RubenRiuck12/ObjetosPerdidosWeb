@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #374151;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 140px;
+    height: auto; 
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Para que se vea que es interactivo */
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos a la parte superior */
+    height: calc(100vh - 100px); /* Ajusta la altura para que no se superponga con el header */
+    gap: 50px;
+    margin-top: 130px; /* Aumenta el margen superior para separar el main del header */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column label {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.column button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 16px;
+}
+
+.column button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 68px auto 0; /* Centrado horizontal y separación con el header */
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+    margin-top: 150px;
+}
+
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.upload-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.right-section {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.profile-form .form-group {
+    margin-bottom: 15px;
+}
+
+.input-field {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d1d5db;
+}

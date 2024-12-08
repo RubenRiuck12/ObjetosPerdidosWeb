@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  width: 100vw;
+}
+
+.logo img {
+  width: 140px;
+  height: auto; 
+}
+
+
+.header {
+  background-color: #374151;
+  width: 100vw;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+.search-bar {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile span {
+  margin-right: 10px;
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.search-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.search-section h2 {
+  margin-bottom: 10px;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.results-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.object-item {
+  background-color: #fff;
+  width: calc(50% - 10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.object-image img {
+  width: 80px;
+  height: 80px;
+}
+
+.estado {
+  display: block;
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.no-encontrado {
+  color: red;
+}
+
+.encontrado {
+  color: green;
+}
+
+.object-info p {
+  margin: 5px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.pagination a, .pagination .current-page {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #374151; /* Color principal */
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb; /* Borde para estructura */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #4f46e5; /* Color de fondo en hover */
+  color: white; /* Texto en hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.pagination .current-page {
+  background-color: #4f46e5; /* Color del botón activo */
+  color: white;
+  cursor: default;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}

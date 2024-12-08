@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="PerfilDBA.css">
+</head>
+<body>
+    <div id="app" class="perfil">
+        <header class="header">
+            <div class="logo">
+            <a href="DBAdmin.php">
+                <img src="Imagenes/logobuscatec-modified.png" alt="Logo">
+            </a>
+            </div>
+            <img src="Imagenes/3.png" alt="Usuario" class="logoescuela">
+            <div class="profile">
+
+                <button class="logout-btn" onclick="location.href='Logout.php'">Cerrar sesión</button>
+            </div>
+        </header>
+
+        <div class="container">
+            <section class="profile-section">
+                <div class="left-section">
+                    <h2>Perfil</h2>
+                    <div class="profile-image">
+                        <img src="Imagenes/IconoUsuario.png" alt="Foto de perfil">
+                        <input type="file" accept="image/*" id="fileInput" style="display: none;" onchange="handleFileUpload(event)">
+                        <button id="editButton" class="upload-btn">Editar</button>
+                        <button id="saveButton" class="upload-btn" style="display:none;">Guardar cambios</button>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <form class="profile-form" id="profileForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" class="input-field" value="Ejemplo de nombre" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido(s):</label>
+                            <input type="text" id="apellido" class="input-field" value="Ejemplo de apellido" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="curp">CURP:</label>
+                            <input type="text" id="curp" class="input-field" value="Ejemplo de CURP" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="num-control">No. De control:</label>
+                            <input type="text" id="num-control" class="input-field" value="Ejemplo de número de control" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="text" id="telefono" class="input-field" value="Ejemplo de teléfono" disabled>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="PerfilDBA.js"></script>
+</body>
+</html>

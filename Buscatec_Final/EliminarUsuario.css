@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #374151;
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 140px;
+    height: auto; 
+}
+
+.logout-btn {
+    background-color: grey;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre el icono y el botón */
+    color: white;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.profile a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile a:hover {
+    text-decoration: underline; /* Para que se vea que es interactivo */
+}
+
+.profile span {
+    margin-right: 10px;
+}
+
+
+.volver-btn {
+    margin-top: 120px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volver-btn:hover {
+    background-color: #218838;
+}
+
+.content-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content-container form {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column {
+    width: 45%;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label, span {
+    display: block;
+    margin: 10px 0;
+}
+
+
+
+.table-container {
+    display: block; /* Cambiar a 'block' para que la tabla ocupe todo el ancho del contenedor */
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table-container table {
+    width: 100%;
+    max-width: 600px; /* Controlar el ancho máximo de la tabla si es necesario */
+    margin: 0 auto; /* Centramos la tabla dentro del contenedor */
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-container th {
+    background-color: #898AA6;
+    color: white;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-container tr:hover {
+    background-color: #ddd;
+}
+
+
+
+
+.user-edit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.user-edit label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.user-edit input[type="text"], .user-edit input[type="email"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-edit button[type="submit"] {
+    grid-column: span 2;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-edit button[type="submit"]:hover {
+    background-color: #45a049;
+}
